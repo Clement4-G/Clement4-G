@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="460" viewBox="0 0 460 460">
+  <title>Clément GAST</title>
+  <rect width="460" height="460" fill="#0b1118"/>
+  <circle cx="230" cy="230" r="196" fill="none" stroke="#85641f" stroke-width="3"/>
+  <circle cx="230" cy="230" r="184" fill="none" stroke="#c9a24a" stroke-width="1" opacity="0.6"/>
+  <path d="M110 300 C 160 210, 200 210, 228 262 S 300 200, 350 148" fill="none" stroke="#38d6ff" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="350" cy="148" r="10" fill="#f0c860"/>
+  <text x="230" y="250" text-anchor="middle" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif" font-size="148" fill="#f4f1ea" letter-spacing="-4">CG</text>
+  <text x="230" y="330" text-anchor="middle" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="20" fill="#c9a24a" letter-spacing="5">BUSINESS × IA</text>
+</svg>
