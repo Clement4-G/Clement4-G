@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="894" height="48" viewBox="0 0 894 48" role="img" aria-labelledby="t">
+  <title id="t">Outils : Claude Code, Obsidian, JavaScript, Python, Ollama, Three.js, GSAP, MetaTrader 5</title>
+  <style>
+    .chip { opacity: 0; animation: in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .c0 { animation-delay: 0.00s; } .c1 { animation-delay: 0.08s; } .c2 { animation-delay: 0.16s; } .c3 { animation-delay: 0.24s; } .c4 { animation-delay: 0.32s; } .c5 { animation-delay: 0.40s; } .c6 { animation-delay: 0.48s; } .c7 { animation-delay: 0.56s; }
+    @keyframes in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .chip { animation: none; opacity: 1; } }
+    text { font-family: 'Cascadia Mono', 'SF Mono', Consolas, 'DejaVu Sans Mono', 'Courier New', monospace; font-size: 13px; font-weight: 600; fill: #e6edf3; }
+  </style>
+  <g class="chip c0"><rect x="2.0" y="8" width="125.8" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="17.0" cy="24" r="3.5" fill="#f0c860"/><text x="28.0" y="29" textLength="85.8" lengthAdjust="spacingAndGlyphs">Claude Code</text></g>
+  <g class="chip c1"><rect x="135.8" y="8" width="102.4" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="150.8" cy="24" r="3.5" fill="#f0c860"/><text x="161.8" y="29" textLength="62.4" lengthAdjust="spacingAndGlyphs">Obsidian</text></g>
+  <g class="chip c2"><rect x="246.2" y="8" width="118.0" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="261.2" cy="24" r="3.5" fill="#f0c860"/><text x="272.2" y="29" textLength="78.0" lengthAdjust="spacingAndGlyphs">JavaScript</text></g>
+  <g class="chip c3"><rect x="372.2" y="8" width="86.8" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="387.2" cy="24" r="3.5" fill="#f0c860"/><text x="398.2" y="29" textLength="46.8" lengthAdjust="spacingAndGlyphs">Python</text></g>
+  <g class="chip c4"><rect x="467.0" y="8" width="86.8" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="482.0" cy="24" r="3.5" fill="#f0c860"/><text x="493.0" y="29" textLength="46.8" lengthAdjust="spacingAndGlyphs">Ollama</text></g>
+  <g class="chip c5"><rect x="561.8" y="8" width="102.4" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="576.8" cy="24" r="3.5" fill="#f0c860"/><text x="587.8" y="29" textLength="62.4" lengthAdjust="spacingAndGlyphs">Three.js</text></g>
+  <g class="chip c6"><rect x="672.2" y="8" width="71.2" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="687.2" cy="24" r="3.5" fill="#f0c860"/><text x="698.2" y="29" textLength="31.2" lengthAdjust="spacingAndGlyphs">GSAP</text></g>
+  <g class="chip c7"><rect x="751.4" y="8" width="133.6" height="32" rx="8" fill="#161b22" stroke="#30363d"/><circle cx="766.4" cy="24" r="3.5" fill="#f0c860"/><text x="777.4" y="29" textLength="93.6" lengthAdjust="spacingAndGlyphs">MetaTrader 5</text></g>
+</svg>

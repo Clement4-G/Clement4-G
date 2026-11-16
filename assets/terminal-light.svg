@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="411" viewBox="0 0 740 411" role="img" aria-labelledby="t d">
+  <title id="t">Clément GAST · Business × IA</title>
+  <desc id="d">Terminal animé : fiche de présentation (Master International Business, sites web, agents IA et automatisation, statut : Je cherche un stage) puis lien vers le musée-portfolio.</desc>
+  <style>
+    text { font-family: 'Cascadia Mono', 'SF Mono', Consolas, 'DejaVu Sans Mono', 'Courier New', monospace; font-size: 14px; }
+    .rv { opacity: 0; animation: rv 0.35s ease-out forwards; }
+    @keyframes rv { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes type { to { transform: translateX(var(--w)); } }
+    .cursor { animation: blink 1.05s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .pulse { animation: pulse 1.8s ease-in-out infinite; }
+    @keyframes pulse { 50% { opacity: 0.3; } }
+    .k0{animation:type 0.50s steps(6) 0.40s forwards;--w:50.4px}
+    .r3{animation-delay:1.25s}
+    .r4{animation-delay:1.30s}
+    .r5{animation-delay:1.35s}
+    .r6{animation-delay:1.40s}
+    .r7{animation-delay:1.45s}
+    .r8{animation-delay:1.50s}
+    .r9{animation-delay:1.55s}
+    .r10{animation-delay:1.25s}
+    .r11{animation-delay:1.34s}
+    .r12{animation-delay:1.43s}
+    .r13{animation-delay:1.52s}
+    .r14{animation-delay:1.61s}
+    .r15{animation-delay:1.70s}
+    .r16{animation-delay:1.79s}
+    .r17{animation-delay:1.88s}
+    .r18{animation-delay:1.97s}
+    .r19{animation-delay:2.06s}
+    .k20{animation:type 0.94s steps(17) 2.46s forwards;--w:142.8px}
+    .r23{animation-delay:3.75s}
+    .r24{animation-delay:3.95s}
+    @media (prefers-reduced-motion: reduce) {
+      .rv { animation: none; opacity: 1; }
+      [class^="k"] { animation: none; display: none; }
+      .cursor, .pulse { animation: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="art" gradientUnits="userSpaceOnUse" x1="38" y1="80" x2="200" y2="230"><stop offset="0" stop-color="#9a6700"/><stop offset="1" stop-color="#0a7ea4"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="738" height="409" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <path d="M1 13a12 12 0 0 1 12-12h714a12 12 0 0 1 12 12v19H1z" fill="#eaeef2"/>
+  <line x1="1" y1="32" x2="739" y2="32" stroke="#d0d7de"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/><circle cx="42" cy="17" r="6" fill="#febc2e"/><circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="370" y="21" text-anchor="middle" fill="#59636e" style="font-size:12px">clement@gast — bash</text>
+  <text x="34.0" y="62" fill="#1a7f37" textLength="100.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">clement@gast</text><text x="134.8" y="62" fill="#1f2328" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">:</text><text x="143.2" y="62" fill="#0969da" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">~</text><text x="151.6" y="62" fill="#1f2328" textLength="16.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">$ </text>
+  <text x="168.4" y="62" fill="#1f2328" textLength="50.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">whoami</text>
+  <rect class="k0" x="167.4" y="46" width="62.4" height="21" fill="#f6f8fa"/>
+  <g class="rv r3"><rect x="48" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="58" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="68" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="78" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="88" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="138" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="148" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="158" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="168" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="178" y="81" width="9" height="19" rx="1.5" fill="url(#art)"/></g>
+  <g class="rv r4"><rect x="38" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="48" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="88" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="98" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="128" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="138" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="178" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="188" y="102" width="9" height="19" rx="1.5" fill="url(#art)"/></g>
+  <g class="rv r5"><rect x="38" y="123" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="48" y="123" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="128" y="123" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="138" y="123" width="9" height="19" rx="1.5" fill="url(#art)"/></g>
+  <g class="rv r6"><rect x="38" y="144" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="48" y="144" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="128" y="144" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="138" y="144" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="168" y="144" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="178" y="144" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="188" y="144" width="9" height="19" rx="1.5" fill="url(#art)"/></g>
+  <g class="rv r7"><rect x="38" y="165" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="48" y="165" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="128" y="165" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="138" y="165" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="178" y="165" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="188" y="165" width="9" height="19" rx="1.5" fill="url(#art)"/></g>
+  <g class="rv r8"><rect x="38" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="48" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="88" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="98" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="128" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="138" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="178" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="188" y="186" width="9" height="19" rx="1.5" fill="url(#art)"/></g>
+  <g class="rv r9"><rect x="48" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="58" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="68" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="78" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="88" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="138" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="148" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="158" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="168" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/><rect x="178" y="207" width="9" height="19" rx="1.5" fill="url(#art)"/></g>
+  <g class="rv r10"><text x="210.4" y="93" fill="#1a7f37" textLength="58.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">clement</text><text x="269.2" y="93" fill="#1f2328" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">@</text><text x="277.6" y="93" fill="#1a7f37" textLength="33.6" lengthAdjust="spacingAndGlyphs" xml:space="preserve">gast</text></g>
+  <g class="rv r11"><text x="210.4" y="116" fill="#d0d7de" textLength="369.6" lengthAdjust="spacingAndGlyphs" xml:space="preserve">────────────────────────────────────────────</text></g>
+  <g class="rv r12"><text x="210.4" y="139" fill="#9a6700" textLength="92.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Rôle       </text><text x="302.8" y="139" fill="#1f2328" textLength="109.2" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Business × IA</text></g>
+  <g class="rv r13"><text x="210.4" y="162" fill="#9a6700" textLength="92.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Formation  </text><text x="302.8" y="162" fill="#1f2328" textLength="243.6" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Master International Business</text></g>
+  <g class="rv r14"><text x="210.4" y="185" fill="#9a6700" textLength="92.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Construit  </text><text x="302.8" y="185" fill="#1f2328" textLength="319.2" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Sites web · agents IA · automatisation</text></g>
+  <g class="rv r15"><text x="210.4" y="208" fill="#9a6700" textLength="92.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Outils     </text><text x="302.8" y="208" fill="#1f2328" textLength="378.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Claude Code · Obsidian · JS · Python · Ollama</text></g>
+  <g class="rv r16"><text x="210.4" y="231" fill="#9a6700" textLength="92.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Projet ★   </text><text x="302.8" y="231" fill="#1f2328" textLength="352.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Site vitrine de Tethys, en ligne en 3 mois</text></g>
+  <g class="rv r17"><text x="210.4" y="254" fill="#9a6700" textLength="92.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Méthode    </text><text x="302.8" y="254" fill="#1f2328" textLength="327.6" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Je cadre, les agents codent, je vérifie</text></g>
+  <g class="rv r18"><circle class="pulse" cx="307.8" cy="272" r="5" fill="#1a7f37"/><text x="210.4" y="277" fill="#9a6700" textLength="50.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Statut</text><text x="319.6" y="277" fill="#1a7f37" textLength="159.6" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Je cherche un stage</text></g>
+  <g class="rv r19"><rect x="210.4" y="291" width="22" height="12" rx="2" fill="#f85149"/><rect x="236.4" y="291" width="22" height="12" rx="2" fill="#f0c860"/><rect x="262.4" y="291" width="22" height="12" rx="2" fill="#3fb950"/><rect x="288.4" y="291" width="22" height="12" rx="2" fill="#38d6ff"/><rect x="314.4" y="291" width="22" height="12" rx="2" fill="#58a6ff"/><rect x="340.4" y="291" width="22" height="12" rx="2" fill="#bc8cff"/><rect x="366.4" y="291" width="22" height="12" rx="2" fill="#1f2328"/><rect x="392.4" y="291" width="22" height="12" rx="2" fill="#59636e"/></g>
+  <text x="34.0" y="335" fill="#1a7f37" textLength="100.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">clement@gast</text><text x="134.8" y="335" fill="#1f2328" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">:</text><text x="143.2" y="335" fill="#0969da" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">~</text><text x="151.6" y="335" fill="#1f2328" textLength="16.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">$ </text>
+  <text x="168.4" y="335" fill="#1f2328" textLength="142.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">./musee --visiter</text>
+  <rect class="k20" x="167.4" y="319" width="154.8" height="21" fill="#f6f8fa"/>
+  <g class="rv r23"><text x="34.0" y="358" fill="#0a7ea4" textLength="16.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">→ </text><text x="50.8" y="358" fill="#0a7ea4" textLength="168.0" lengthAdjust="spacingAndGlyphs" xml:space="preserve">clement4-g.github.io</text><text x="218.8" y="358" fill="#59636e" textLength="235.2" lengthAdjust="spacingAndGlyphs" xml:space="preserve">  · un musée à visiter en 3D</text></g>
+  <g class="rv r24"><text x="34.0" y="381" fill="#1a7f37" textLength="100.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">clement@gast</text><text x="134.8" y="381" fill="#1f2328" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">:</text><text x="143.2" y="381" fill="#0969da" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">~</text><text x="151.6" y="381" fill="#1f2328" textLength="8.4" lengthAdjust="spacingAndGlyphs" xml:space="preserve">$</text><rect class="cursor" x="168.4" y="367" width="8.4" height="18" fill="#1f2328"/></g>
+</svg>
