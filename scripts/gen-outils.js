@@ -2,8 +2,8 @@
 // Usage : bun scripts/gen-outils.js
 const tools = ['Claude Code', 'Obsidian', 'JavaScript', 'Python', 'Ollama', 'Three.js', 'GSAP', 'MetaTrader 5'];
 const THEMES = {
-  dark: { fill: '#161b22', stroke: '#30363d', text: '#e6edf3', dot: '#f0c860' },
-  light: { fill: '#f6f8fa', stroke: '#d0d7de', text: '#1f2328', dot: '#9a6700' },
+  dark: { fill: '#161b22', stroke: '#30363d', text: '#e6edf3', dot: '#5ef2b0' },
+  light: { fill: '#f6f8fa', stroke: '#d0d7de', text: '#1f2328', dot: '#1a7f37' },
 };
 const CW = 7.8;
 

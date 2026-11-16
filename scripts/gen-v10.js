@@ -18,12 +18,12 @@ const THEMES = {
   dark: {
     bg: '#0d1117', panel: '#161b22', edge: '#30363d', text: '#e6edf3', dim: '#8b949e', prompt: '#5ef2b0', path: '#58a6ff',
     steel: '#9aa7b4', steelHi: '#d7dee6', steelLo: '#5b6672', rod: '#7d8894', crank: '#c3ccd5',
-    glass: '#38d6ff', head: '#1f6f8b', gold: '#f0c860', goldLo: '#a47c22', spark: '#ff9a3c', red: '#f85149', shadow: '#000000',
+    glass: '#8b949e', head: '#6e7681', spark: '#ff9a3c', red: '#ff9a3c', shadow: '#000000',
   },
   light: {
     bg: '#ffffff', panel: '#f6f8fa', edge: '#d0d7de', text: '#1f2328', dim: '#59636e', prompt: '#1a7f37', path: '#0969da',
     steel: '#7b8794', steelHi: '#c4ccd4', steelLo: '#4a5561', rod: '#5f6b77', crank: '#5f6b77',
-    glass: '#0a7ea4', head: '#0a7ea4', gold: '#c9961f', goldLo: '#8a6510', spark: '#f0661a', red: '#cf222e', shadow: '#1f2328',
+    glass: '#59636e', head: '#8c959f', spark: '#f0661a', red: '#f0661a', shadow: '#1f2328',
   },
 };
 
@@ -86,7 +86,7 @@ const f1 = (n) => (Math.round(n * 10) / 10).toString();
 const pathOf = (pts) => 'M' + pts.map((q) => `${f1(q[0] ?? q.x)} ${f1(q[1] ?? q.y)}`).join('L') + 'Z';
 const avgDepth = (pts) => pts.reduce((s, q) => s + q.d, 0) / pts.length;
 
-// solide de révolution entre deux centres (piston, chemise, trompette)
+// solide de révolution entre deux centres (piston, chemise)
 function tube(c0, c1, r0, r1 = r0) {
   const axis = norm(add(c1, mul(c0, -1)));
   const pts = [...ring(c0, axis, r0), ...ring(c1, axis, r1)].map(proj);
@@ -138,16 +138,10 @@ function frame(c, k) {
 function staticParts(c) {
   const liners = [];
   const heads = [];
-  const stacks = [];
   for (const cyl of CYL) {
     const o = [cyl.x, 0, 0];
     const t = tube(add(o, mul(cyl.u, 0.95)), add(o, mul(cyl.u, DECK)), BORE + 0.04);
     liners.push({ d: t.d, svg: `<path d="${t.outline}" fill="${c.glass}" fill-opacity="0.10" stroke="${c.glass}" stroke-opacity="0.55" stroke-width="1"/><path d="${t.top}" fill="none" stroke="${c.glass}" stroke-opacity="0.7" stroke-width="1"/>` });
-    // trompette d'admission (un papillon par cylindre), côté intérieur du V
-    const inward = norm(cross([1, 0, 0], cyl.u)).map((v) => v * (cyl.bank === 'A' ? 1 : -1));
-    const base = add(add(o, mul(cyl.u, HEAD - 0.08)), mul(inward, 0.22));
-    const st = tube(base, add(base, [0, 0, 0.62]), 0.13, 0.2);
-    stacks.push({ d: st.d, svg: `<path d="${st.outline}" fill="url(#gold)" stroke="${c.goldLo}" stroke-width="0.8"/><path d="${st.top}" fill="${c.bg}" stroke="${c.gold}" stroke-width="1.2"/>` });
   }
   // culasses : un caisson par banc
   for (const bank of ['A', 'B']) {
@@ -159,7 +153,7 @@ function staticParts(c) {
     heads.push({ d: avgDepth(corners), svg: `<path d="${pathOf(hull(corners))}" fill="${c.head}" fill-opacity="0.22" stroke="${c.glass}" stroke-opacity="0.8" stroke-width="1.2"/>` });
   }
   const sortD = (arr) => arr.sort((a, b) => b.d - a.d).map((i) => i.svg).join('');
-  return { liners: sortD(liners), heads: sortD(heads), stacks: sortD(stacks) };
+  return { liners: sortD(liners), heads: sortD(heads) };
 }
 
 function tach(c) {
@@ -214,28 +208,22 @@ export function v10(theme) {
     ${frameCss}
     .needle { transform-origin: 742px 196px; transform: rotate(-120deg); animation: rev ${CYCLE * 2}s cubic-bezier(0.5, 0, 0.3, 1) infinite; }
     @keyframes rev { 0%, 8% { transform: rotate(-104deg); } 38% { transform: rotate(120deg); } 46% { transform: rotate(114deg); } 52% { transform: rotate(120deg); } 82%, 100% { transform: rotate(-104deg); } }
-    .glow { animation: glow ${CYCLE * 2}s ease-in-out infinite; }
-    @keyframes glow { 0%, 20%, 70%, 100% { opacity: 0.15; } 40%, 52% { opacity: 0.55; } }
     @media (prefers-reduced-motion: reduce) {
-      .f, .needle, .glow { animation: none; }
       .f0 { opacity: 1; }
     }
   </style>
   <defs>
     <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c.steelHi}"/><stop offset="0.55" stop-color="${c.steel}"/><stop offset="1" stop-color="${c.steelLo}"/></linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${c.goldLo}"/><stop offset="0.45" stop-color="${c.gold}"/><stop offset="1" stop-color="${c.goldLo}"/></linearGradient>
     <radialGradient id="spark"><stop offset="0" stop-color="#fff6d8"/><stop offset="0.35" stop-color="${c.spark}"/><stop offset="1" stop-color="${c.spark}" stop-opacity="0"/></radialGradient>
     <radialGradient id="shadow"><stop offset="0" stop-color="${c.shadow}" stop-opacity="0.35"/><stop offset="1" stop-color="${c.shadow}" stop-opacity="0"/></radialGradient>
   </defs>
   <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="12" fill="${c.bg}" stroke="${c.edge}"/>
   <text x="26" y="36" class="m" style="font-size:14px"><tspan fill="${c.prompt}">clement@gast</tspan><tspan fill="${c.text}">:</tspan><tspan fill="${c.path}">~</tspan><tspan fill="${c.text}">$ ./passions --moteur v10</tspan></text>
   <ellipse cx="${f1((groundA.x + groundB.x) / 2)}" cy="${f1((groundA.y + groundB.y) / 2 + 8)}" rx="300" ry="38" fill="url(#shadow)"/>
-  <ellipse class="glow" cx="${OX}" cy="${OY - 120}" rx="270" ry="120" fill="url(#spark)" opacity="0.15"/>
   ${frames.map((f, k) => `<g class="f f${k}">${f.body}</g>`).join('\n  ')}
   ${st.liners}
   ${st.heads}
   ${frames.map((f, k) => (f.sparks ? `<g class="f f${k}">${f.sparks}</g>` : '')).join('')}
-  ${st.stacks}
   ${tach(c)}
   <text x="26" y="${H - 22}" class="m" fill="${c.dim}" style="font-size:12px">V10 à 72° · 4,8 L · un allumage tous les 72° de vilebrequin · inspiré de la Lexus LFA · animation très ralentie</text>
 </svg>

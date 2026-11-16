@@ -9,13 +9,13 @@ const FS = 14;
 const THEMES = {
   dark: {
     page: '#0d1117', win: '#161b22', bar: '#21262d', edge: '#30363d', text: '#e6edf3', dim: '#8b949e',
-    prompt: '#5ef2b0', path: '#58a6ff', key: '#f0c860', accent: '#38d6ff', ok: '#3fb950',
-    art: ['#f0c860', '#38d6ff'],
+    prompt: '#5ef2b0', path: '#e6edf3', key: '#8b949e', accent: '#5ef2b0', ok: '#5ef2b0',
+    art: ['#e6edf3', '#8b949e'],
   },
   light: {
     page: '#ffffff', win: '#f6f8fa', bar: '#eaeef2', edge: '#d0d7de', text: '#1f2328', dim: '#59636e',
-    prompt: '#1a7f37', path: '#0969da', key: '#9a6700', accent: '#0a7ea4', ok: '#1a7f37',
-    art: ['#9a6700', '#0a7ea4'],
+    prompt: '#1a7f37', path: '#1f2328', key: '#59636e', accent: '#1a7f37', ok: '#1a7f37',
+    art: ['#1f2328', '#59636e'],
   },
 };
 
@@ -104,11 +104,8 @@ export function terminal(theme, status = 'Ouvert aux échanges') {
   const statusY = startY + LH * (FACTS.length + 2);
   reveal(`<circle class="pulse" cx="${(factX + 11 * CW + 5).toFixed(1)}" cy="${statusY - 5}" r="5" fill="${c.ok}"/>`
     + line(factX, statusY, [['Statut', c.key]]) + line(factX + 13 * CW, statusY, [[status, c.ok]]));
-  // nuancier façon neofetch
-  const sw = ['#f85149', '#f0c860', '#3fb950', '#38d6ff', '#58a6ff', '#bc8cff', c.text, c.dim];
-  reveal(sw.map((col, i) => `<rect x="${(factX + i * 26).toFixed(1)}" y="${statusY + 14}" width="22" height="12" rx="2" fill="${col}"/>`).join(''), 0.4);
 
-  y = statusY + 58;
+  y = statusY + 42;
   typed('./musee --visiter', y);
   y += LH;
   reveal(line(X, y, [['→ ', c.accent], ['clement4-g.github.io', c.accent], ['  · un musée à visiter en 3D', c.dim]]), 0.2);
@@ -143,7 +140,7 @@ export function terminal(theme, status = 'Ouvert aux échanges') {
   <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="12" fill="${c.win}" stroke="${c.edge}"/>
   <path d="M1 13a12 12 0 0 1 12-12h${W - 26}a12 12 0 0 1 12 12v19H1z" fill="${c.bar}"/>
   <line x1="1" y1="32" x2="${W - 1}" y2="32" stroke="${c.edge}"/>
-  <circle cx="22" cy="17" r="6" fill="#ff5f57"/><circle cx="42" cy="17" r="6" fill="#febc2e"/><circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <circle cx="22" cy="17" r="6" fill="${c.edge}"/><circle cx="42" cy="17" r="6" fill="${c.edge}"/><circle cx="62" cy="17" r="6" fill="${c.edge}"/>
   <text x="${W / 2}" y="21" text-anchor="middle" fill="${c.dim}" style="font-size:12px">clement@gast — bash</text>
   ${body.join('\n  ')}
 </svg>
